@@ -4,9 +4,7 @@ use_recipes :git, :bundle, :rails
 server 'vps.dev', :web, :app, :db, :primary => true
 
 set :user, 'maw'
-set :repository, '.'
-set :repository, '.'
+set :repository, 'https://github.com/javierg/maw.git'
 set :deploy_to, '/srv/maw'
-set :deploy_via, :copy
 
 after 'deploy:update', 'bundle:install'
