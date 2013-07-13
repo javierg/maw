@@ -146,6 +146,7 @@ PLATFORMS
 
 DEPENDENCIES
   browsercms (= 3.5.7)
+  bundler
   capistrano-deploy
   coffee-rails (~> 3.2.1)
   jquery-rails
