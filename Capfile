@@ -11,4 +11,4 @@ set :user, 'maw'
 set :repository, 'http://github.com/javierg/maw.git'
 set :deploy_to, '/srv/maw'
 
-after 'deploy:update', 'bundle:install'
+after 'deploy:update', 'bundle:install', 'deploy:migrations'
