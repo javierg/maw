@@ -10,6 +10,7 @@ gem 'sqlite3'
 
 gem 'capistrano-deploy', :group => :development, :require => false
 
+gem 'haml-rails'
 
 # Gems used only for assets and not required
 # in production environments by default.
