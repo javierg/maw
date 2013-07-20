@@ -1,0 +1,13 @@
+!!!
+%html
+  %head
+    %title= page_title
+    != yield :html_head
+
+  %body
+    != cms_toolbar
+    #wrapper{style: "width: 700px; margin: 0 auto; text-align: left; padding: 30px"}
+      != render_breadcrumbs
+      != render_menu
+      %h1= page_title
+      != container :main
