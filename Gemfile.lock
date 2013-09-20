@@ -31,6 +31,8 @@ GEM
     ancestry (1.2.5)
       activerecord (>= 2.2.2)
     arel (3.0.2)
+    bootstrap-sass (2.3.2.1)
+      sass (~> 3.2)
     browsercms (3.5.7)
       ancestry (~> 1.2.4)
       ckeditor_rails (~> 3.6.4)
@@ -157,6 +159,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bootstrap-sass
   browsercms (= 3.5.7)
   bundler
   capistrano-deploy

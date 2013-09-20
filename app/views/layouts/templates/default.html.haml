@@ -2,12 +2,27 @@
 %html
   %head
     %title= page_title
+    != stylesheet_link_tag    "application", :media => "all"
+    != javascript_include_tag "application"
     != yield :html_head
 
   %body
     != cms_toolbar
-    #wrapper{style: "width: 700px; margin: 0 auto; text-align: left; padding: 30px"}
-      != render_breadcrumbs
-      != render_menu
-      %h1= page_title
-      != container :main
+    != render_breadcrumbs
+    .container
+      #header.row.clearfix
+        .span3
+          #logo= image_tag 'mami_at_work_logo.jpg'
+        .span9
+          = render_menu from_top: 0, depth: 1
+      .row
+        - if page_title == 'Home'
+          #content.span12
+            != container :main
+        - else
+          #sidebar.span3
+            != render_menu from_top: 1, depth: 2, class: 'submenu'
+          #content.span9
+            %h2= page_title
+            != container :main
+

@@ -1,4 +1,73 @@
+@import url(http://fonts.googleapis.com/css?family=Karla:400,700&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Slab:100);
+
+@import "bootstrap";
+
+body {
+  font-family: 'Karla', sans-serif;
+  font-size: 14px;
+}
+
+b,h1,h2,h3,h4,h5,h6 {
+  font-family: 'Roboto Slab', serif;
+}
+
+h2, h3 {
+  font-style: italic;
+  margin-bottom: 1em;
+}
+
 #main {
   width: 420px;
   margin: 200px auto;
+}
+
+#header{
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.menu {
+  @extend .pull-right;
+  margin: 20px 0;
+  ul {
+    @extend .btn-group;
+    li {
+      @extend .btn;
+      a { text-decoration: none; }
+    }
+  }
+}
+
+#logo {
+  margin-top: 20px;
+}
+
+#sidebar {
+  padding-top: 20px;
+  .submenu {
+    ul {
+      @extend .nav;
+      @extend .nav-list;
+      li {
+        a { text-decoration: none; }
+        text-align:right;
+        margin-bottom: 0.5em;
+      }
+    }
+  }
+}
+
+ul.breadcrumbs {
+  font-size: 0.8em;
+  color: #242424;
+  list-style: none;
+  background-color: #efefef;
+  margin: 0px;
+  padding-left:20px;
+  @extend .clearfix;
+  li {
+    float:left;
+    width: auto;
+    padding: 10px 3px;
+  }
 }
