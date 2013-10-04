@@ -1,35 +1,18 @@
-!!!
-%html
-  %head
-    %title= page_title
-    != stylesheet_link_tag    "application", :media => "all"
-    != javascript_include_tag "application"
-    != yield :html_head
-
-  %body
-    != cms_toolbar
-    != render_breadcrumbs
-    .container
-      #header.row-fluid.clearfix
-        .span3
-          #logo= image_tag 'mami_at_work_logo.jpg'
-        .span9
-          = render_menu from_top: 0, depth: 1
+- content_for :main_content do
+  - if page_title == 'Home'
+    #main.content.span12
       .row-fluid
-        - if page_title == 'Home'
-          #main.content.span12
-            != container :main
-        - else
-          #sidebar.span3
-            != render_menu from_top: 1, depth: 2, class: 'submenu'
-          .content.span9
-            %h2= page_title
-            != container :main
-        - if content_for? :extended
-          #extended.row-fluid
-            != yield :extended
+        .span4.home-intro= container :intro
+        .span8= container :main
+  - else
+    #sidebar.span3
+      != render_menu from_top: 1, depth: 2, class: 'submenu'
+    .content.span9
+      %h2= page_title
+      != container :main
 
-    #footer.narvbar.navbar-fixed-bottom
-      Copyright
-      = Date.today.year
-      Mami@Work. Todos los Deerechos Reservados.
+  - if content_for? :extended
+    #extended.row-fluid
+      != yield :extended
+
+= render template: 'layouts/application'

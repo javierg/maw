@@ -1,10 +1,24 @@
 !!!
 %html
   %head
-    %title= Mami@Work
-    != stylesheet_link_tag    :application, media: :all
-    != javascript_include_tag :application
-    != csrf_meta_tags
+    %title= page_title
+    != stylesheet_link_tag    "application", :media => "all"
+    != javascript_include_tag "application"
+    != yield :html_head
 
   %body
-    != yield
+    != cms_toolbar
+    != render_breadcrumbs
+    .container
+      #header.row-fluid.clearfix
+        .span3
+          #logo= image_tag 'mami_at_work_logo.jpg'
+        .span9
+          = render_menu from_top: 0, depth: 1
+      .row-fluid
+        = yield :main_content
+
+    #footer.narvbar.navbar-fixed-bottom
+      Copyright
+      = Date.today.year
+      Mami@Work. Todos los Deerechos Reservados.

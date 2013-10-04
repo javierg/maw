@@ -89,9 +89,41 @@ ul.breadcrumbs {
   min-height: 14em;
 }
 
+.container {
+  padding-bottom: 50px;
+}
+
 #footer {
   padding: 0.25em 1em;
   font-size: 0.75em;
   background-color: #d4d4d4;
   color: #424242;
+}
+
+.home-intro {
+  font-size: 1.15em;
+  text-align: right;
+  color: white;
+  height: 357px;
+  background-color: #af4863;
+  color: white;
+  padding: 1em;
+  .identity {
+    font-size: 1.6em;
+    display:block;
+    color: #eedad1;
+  }
+  em {
+    font-size: 1.6em;
+    color: #eedad1;
+  }
+  div {
+    margin-bottom: 0.25em;
+    padding-bottom: 0.25em;
+    border-bottom: 1px solid #eedad1;
+  }
+}
+
+.noborder {
+  border: none !important;
 }
