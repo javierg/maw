@@ -1,1 +1,16 @@
+!= content_for :extended do
+  .span4
+    .sampler
+      != container :carrera
+    .more= link_to 'Leer más', '/carrera'
+  .span4
+    .sampler
+      != container :familia
+    .more= link_to 'Leer más', '/familia'
+  .span4
+    .sampler
+      != container :personal
+    .more= link_to 'Leer más', '/personal'
+
+
 = render template: 'layouts/templates/default'

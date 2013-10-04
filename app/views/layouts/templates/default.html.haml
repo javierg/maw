@@ -10,19 +10,26 @@
     != cms_toolbar
     != render_breadcrumbs
     .container
-      #header.row.clearfix
+      #header.row-fluid.clearfix
         .span3
           #logo= image_tag 'mami_at_work_logo.jpg'
         .span9
           = render_menu from_top: 0, depth: 1
-      .row
+      .row-fluid
         - if page_title == 'Home'
-          #content.span12
+          #main.content.span12
             != container :main
         - else
           #sidebar.span3
             != render_menu from_top: 1, depth: 2, class: 'submenu'
-          #content.span9
+          .content.span9
             %h2= page_title
             != container :main
+        - if content_for? :extended
+          #extended.row-fluid
+            != yield :extended
 
+    #footer.narvbar.navbar-fixed-bottom
+      Copyright
+      = Date.today.year
+      Mami@Work. Todos los Deerechos Reservados.
