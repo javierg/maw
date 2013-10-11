@@ -4,6 +4,7 @@
     %title= page_title
     != stylesheet_link_tag    "application", :media => "all"
     != javascript_include_tag "application"
+    != analytics_init if Rails.env.production?
     != yield :html_head
 
   %body

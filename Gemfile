@@ -8,6 +8,8 @@ gem 'bundler'
 
 gem 'sqlite3'
 
+gem 'google-analytics-rails'
+
 gem 'capistrano-deploy', :group => :development, :require => false
 
 gem 'haml-rails'
