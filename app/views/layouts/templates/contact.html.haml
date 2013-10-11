@@ -1,0 +1,11 @@
+- content_for :main_content do
+  .span6
+    = container :main
+  .span6
+    = simple_form_for :contact, url: '/contacts/new' do |f|
+      = f.input :name
+      = f.input :email
+      = f.input :comments
+      = f.submit
+
+= render template: 'layouts/application'
