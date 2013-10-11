@@ -7,6 +7,9 @@
   - else
     #sidebar.span3
       != render_menu from_top: 1, depth: 2, class: 'submenu'
+      .section_ad
+        != link_to 'http://www.spacionum.com/', :target => '_blank' do
+          = image_tag 'ads/spacionum_add.jpg'
     .content.span9
       %h2= page_title
       != container :main

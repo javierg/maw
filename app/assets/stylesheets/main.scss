@@ -3,9 +3,19 @@
 
 @import "bootstrap";
 
+$pink: #e14885;
+
 body {
   font-family: 'Karla', sans-serif;
   font-size: 14px;
+}
+
+a {
+  color: #ff3e84;
+}
+
+a:hover {
+  color: #c4c4c4;
 }
 
 b,h1,h2,h3,h4,h5,h6 {
@@ -16,12 +26,36 @@ h4 {
   font-family: 'Karla', sans-serif;
   font-size: 1.3em;
   height: 2em;
-  display: table;
+  vertical-align: bottom;
+  display: table-cell;
+  padding-bottom: 10px;
 }
 
 h2, h3 {
   font-style: italic;
   margin-bottom: 1em;
+}
+
+.content {
+  cite {
+    display:block;
+    color: #848484;
+    clear: both;
+    margin-bottom: 2em;
+  }
+
+  p.image-intro{
+    float: right;
+    width: 500px;
+    img {
+      width: 500px;
+    }
+    margin-left: 1em;
+  }
+}
+
+.main_ad {
+  text-align: center;
 }
 
 #main.content {
@@ -68,7 +102,9 @@ h2, h3 {
 }
 
 ul.breadcrumbs {
-  font-size: 0.8em;
+  width: 100%;
+  position: fixed;
+  font-size: 0.9em;
   color: #242424;
   list-style: none;
   background-color: #efefef;
@@ -86,10 +122,15 @@ ul.breadcrumbs {
 }
 
 .sampler {
-  min-height: 14em;
+  min-height: 24em;
+  margin-top: 0.5em;
+  img {
+    border: 2px solid #c4c4c4;
+  }
 }
 
 .container {
+  padding-top: 40px;
   padding-bottom: 50px;
 }
 
@@ -101,29 +142,35 @@ ul.breadcrumbs {
 }
 
 .home-intro {
-  font-size: 1.15em;
+  font-size: 1.1em;
   text-align: right;
   color: white;
   height: 357px;
-  background-color: #af4863;
+  background-color: $pink;
   color: white;
-  padding: 1em;
+  padding: 2em 1em 0 1em;
   .identity {
     font-size: 1.6em;
     display:block;
     color: #eedad1;
   }
   em {
-    font-size: 1.6em;
+    font-size: 1.2em;
     color: #eedad1;
   }
   div {
-    margin-bottom: 0.25em;
-    padding-bottom: 0.25em;
+    margin-bottom: 0.5em;
+    padding-bottom: 0.5em;
     border-bottom: 1px solid #eedad1;
   }
 }
 
 .noborder {
   border: none !important;
+}
+
+.section_ad {
+  margin-top: 1em;
+  border: 1px solid #c4c4c4;
+  width:212px;
 }
