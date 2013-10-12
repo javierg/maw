@@ -27,9 +27,9 @@
             %p= flash[:error]
       - if flash[:info]
         .row-fluid
-          .span12.alert.alert-error
+          .span12.alert.alert-info
             %button.close{type: "button", "data-dismiss" => "alert"} &times;
-            .alert.alert-info= flash[:info]
+            %p= flash[:info]
       .row-fluid
         = yield :main_content
 
