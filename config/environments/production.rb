@@ -3,7 +3,7 @@ Maw::Application.configure do
   # config.cms.site_domain = "www.example.com"
 
   # Configure your mail server's address below
-  config.action_mailer.smtp_settings = {:address => 'mamiatwork.com', :domain => config.cms.site_domain, :port => 3535}
+  config.action_mailer.smtp_settings = {:address => 'localhost', :domain => config.cms.site_domain, :port => 3535}
 
   # Settings specified here will take precedence over those in config/application.rb
 

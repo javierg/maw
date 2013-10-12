@@ -21,9 +21,15 @@
         .span9
           = render_menu from_top: 0, depth: 1
       - if flash[:error]
-        .row-fluid.alert.alert-error= flash[:error]
+        .row-fluid
+          .span12.alert.alert-error
+            %button.close{type: "button", "data-dismiss" => "alert"} &times;
+            %p= flash[:error]
       - if flash[:info]
-        .row-fluid.alert.alert-info= flash[:info]
+        .row-fluid
+          .span12.alert.alert-error
+            %button.close{type: "button", "data-dismiss" => "alert"} &times;
+            .alert.alert-info= flash[:info]
       .row-fluid
         = yield :main_content
 
