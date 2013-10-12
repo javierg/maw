@@ -2,10 +2,15 @@
   .span6
     = container :main
   .span6
-    = simple_form_for :contact, url: '/contacts/new' do |f|
-      = f.input :name
-      = f.input :email
-      = f.input :comments
-      = f.submit
+    = simple_form_for :contact, url: '/contacts/new', class: 'form' do |f|
+      %fieldset
+        %legend
+          .offset1 Envianos tu opinion
+        .offset1
+          = f.input :name, input_html: { class: 'span10'}
+          = f.input :email, input_html: { class: 'span10'}
+          = f.input :message, as: :text, input_html: { class: 'span10', rows: 10}
+          .span10
+            = f.submit 'Eviar mensage', class: 'btn btn-info pull-right'
 
 = render template: 'layouts/application'
