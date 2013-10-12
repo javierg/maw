@@ -1,12 +1,12 @@
-class ConactsController < ApplicationController
+class ContactsController < ApplicationController
 
   def new
     data = params[:contact]
     msg = ContactForm.new( data )
     if msg.deliver
-      flash[:msg] = 'Mensaje enviado'
+      flash[:info] = 'Gracias por tu interés. Pronto nos comunicaremos contigo para atender tus comentarios.'
     else
-      flash[:error] = 'Error al enviar mensaje.'
+      flash[:error] = 'Ups! aparentemente algo salió mal. Por favor intenta de nuevo.'
     end
     redirect_to '/contacto'
   end

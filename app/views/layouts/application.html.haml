@@ -21,6 +21,8 @@
         .span9
           = render_menu from_top: 0, depth: 1
       .row-fluid
+        .alert.alert-error= flash[:error] if flash[:error]
+        .alert.alert-info= flash[:info] if flash[:info]
         = yield :main_content
 
     #footer.narvbar.navbar-fixed-bottom
