@@ -12,8 +12,11 @@
     != render_breadcrumbs
     .container
       .main_ad
-        = link_to 'http://www.metamorfo.com', :target => '_blank' do
-          = image_tag('metamorfo.jpg')
+        - if main_ad.link
+          = link_to "http://#{main_ad.link}", :target => '_blank' do
+            = image_tag(main_ad.img)
+        - else
+          = image_tag(main_ad.img)
 
       #header.row-fluid.clearfix
         .span3
