@@ -7,7 +7,7 @@ class Ad
   MAIN_ADS = {
     familia: {img: "ads/spacio-num-nov.jpg", link: "http://https://www.facebook.com/spacionumtijuana"},
     solo_para_ti: {img: "ads/ecole.png"},
-    carrera: {img: "ads/bay-gym.png"}
+    carrera: {img: "ads/baby-gym.png"}
   }.freeze
 
   SECCS_ADS = {
