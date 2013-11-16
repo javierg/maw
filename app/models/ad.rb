@@ -5,9 +5,9 @@ class Ad
   SECCS_DEFAULT = {img: "ads/spacionum_add.jpg", link: "http://www.spacionum.com"}
 
   MAIN_ADS = {
-    familia: {img: "ads/baby-gym.png"},
+    familia: {img: "ads/spacio-num-nov.jpg", link: "http://www.spacionum.com"},
     solo_para_ti: {img: "ads/ecole.png"},
-    carrera: {img: "ads/ecole.png"}
+    carrera: {img: "ads/bay-gym.png"}
   }.freeze
 
   SECCS_ADS = {
