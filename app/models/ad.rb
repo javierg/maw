@@ -6,14 +6,14 @@ class Ad
 
   MAIN_ADS = {
     familia: {img: "ads/baby-gym.png"},
-    solo_para_ti: {img: "ads/grupo-adelante.png", link: "www.facebook.com/GrupoAdelante"},
+    solo_para_ti: {img: "ads/ecole.png"},
     carrera: {img: "ads/ecole.png"}
   }.freeze
 
   SECCS_ADS = {
     solo_para_ti: {img: "ads/cirugiagogo.jpg", link: "https://www.facebook.com/cirugiatijuana"},
     familia: {img: "ads/creperie.la.luna.png", link: "https://www.facebook.com/creperia.laluna"},
-    quiénes_somos: {img: "ads/creperie.la.luna.png", link:  "https://www.facebook.com/creperia.laluna"},
+    carrera: {img: "ads/creperie.la.luna.png", link:  "https://www.facebook.com/creperia.laluna"},
   }
 
   def initialize section
