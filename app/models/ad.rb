@@ -12,7 +12,6 @@ class Ad
 
   SECCS_ADS = {
     solo_para_ti: {img: "ads/cirugiagogo.jpg", link: "https://www.facebook.com/cirugiatijuana"},
-    familia: {img: "ads/creperie.la.luna.png", link: "https://www.facebook.com/creperia.laluna"},
     carrera: {img: "ads/creperie.la.luna.png", link:  "https://www.facebook.com/creperia.laluna"},
   }
 
