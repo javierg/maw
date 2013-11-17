@@ -10,6 +10,9 @@
   %body
     != cms_toolbar
     != render_breadcrumbs
+    .social
+      = link_to "https://www.facebook.com/mamiatwork.mx" do
+        = image_tag "FB-f-Logo__blue_29.png"
     .container
       .main_ad= yield(:main_ad)
       #header.row-fluid.clearfix

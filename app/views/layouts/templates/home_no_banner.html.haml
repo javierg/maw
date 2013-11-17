@@ -2,8 +2,8 @@
   - if page_title == 'Mami@Work'
     #main.content.span12
       .row-fluid
-        .span4.home-intro= container :intro
-        .span8= container :main
+        .span5.home-intro= container :intro
+        .span7.home-photo= container :main
   - else
     #sidebar.span3
       != render_menu from_top: 1, depth: 2, class: 'submenu'
