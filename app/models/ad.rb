@@ -5,9 +5,9 @@ class Ad
   SECCS_DEFAULT = {img: "ads/spacionum_add.jpg", link: "https://www.facebook.com/spacionumtijuana"}
 
   MAIN_ADS = {
-    familia: {img: "ads/spacio-num-nov.jpg", link: "http://https://www.facebook.com/spacionumtijuana"},
+    familia: {img: "ads/baby-gym.png"},
     solo_para_ti: {img: "ads/ecole.png"},
-    carrera: {img: "ads/baby-gym.png"}
+    carrera: {img: "ads/spacio-num-nov.jpg", link: "http://https://www.facebook.com/spacionumtijuana"}
   }.freeze
 
   SECCS_ADS = {
